@@ -1,0 +1,65 @@
+snippet imp "import '@react-md/PACKAGE/dist/PART'" b
+@import '@react-md/$1/dist/$2';
+endsnippet
+
+snippet impm "import '@react-md/PACKAGE/dist/mixins'" b
+@import '@react-md/$1/dist/mixins';
+endsnippet
+
+snippet impv "import '@react-md/PACKAGE/dist/variables'" b
+@import '@react-md/$1/dist/variables';
+endsnippet
+
+snippet impf "import '@react-md/PACKAGE/dist/functions'" b
+@import '@react-md/$1/dist/functions';
+endsnippet
+
+snippet impa "import '@react-md/PACKAGE/dist/PACKAGE'" b
+@import '@react-md/$1/dist/$1';
+endsnippet
+
+snippet impcp "import react-md theme's color palette" b
+@import '@react-md/theme/dist/color-palette';
+endsnippet
+
+snippet impt "import '@react-md/PACKAGE/dist/PACKAGE'" b
+@import '@react-md/$1/dist/$1';
+endsnippet
+
+snippet theme "include a react-md base theme value" b
+@include rmd-theme(${1:color}, ${2:text-secondary-on-background});
+endsnippet
+
+snippet themeup "update a react-md base theme value" b
+@include rmd-theme-update-var($1, $2);
+endsnippet
+
+snippet themep "include a react-md package's theme value" b
+@include rmd-$1-theme($2);
+endsnippet
+
+snippet themepup "update a react-md package's theme value" b
+@include rmd-$1-theme-update-var($2, $3);
+endsnippet
+
+snippet vtheme "get a react-md theme as a css variable" w
+rmd-theme-var($1);
+endsnippet
+
+snippet vthemep "get a react-md package's theme as a css variable" w
+rmd-$1-theme-var($2);
+endsnippet
+
+snippet scroll "include the rmd-utils-scroll mixin" b
+@include rmd-utils-scroll;
+endsnippet
+
+snippet rtl "include rmd-utils-rtl" b
+@include rmd-utils-rtl {
+	$1
+}
+endsnippet
+
+snippet nofocus "includes the react-md mixin to hide focus outlines" b
+@include rmd-utils-hide-focus-outline;
+endsnippet
