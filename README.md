@@ -1,6 +1,6 @@
 # rmd-vim-snippets
 
-vim snippets using UltiSnips that tie in with the [react-md](../react-md) React Component Library
+vim snippets using UltiSnips that tie in with the [react-md](https://github.com/mlaursen/react-md) React Component Library
 
 ## Available Snippets
 
